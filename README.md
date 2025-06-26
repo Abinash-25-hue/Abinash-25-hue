@@ -6,4 +6,4 @@
 
 ## Languages
 
-![C](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg)
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40" height="40"/>
