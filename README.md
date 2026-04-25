@@ -1,6 +1,6 @@
 # Hello World, I am Abinash Nayak.
 
-💻 I'm currently learning **C++** and **Data Structures and Algorithms**
+💻 I'm currently learning **Java** and **Object Oriented Programming**.
 
 ---
 
