@@ -31,24 +31,14 @@ public:
     {
         unordered_map<int, int> hash_map;
 
-        // Remove all the comments for the most optimal answer
-
-        /*vector <int> v;
-        v[0] = -1
-        v[1] = -1*/
         for (int index = 0; index < nums.size(); index++)
         {
             if (hash_map.count(target - nums[index]))
             {
-                //v[0] = index;
-                //v[1] = hash_map[target - nums[index];]
-                //return v;
                 return {index, hash_map[target - nums[index]]};
             }
             hash_map.insert({nums[index], index});
         }
-
-        //return v;
         return {};
     }
 }
