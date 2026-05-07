@@ -24,7 +24,7 @@ You may assume that each input would have exactly one solution, and you may not 
 
 
 ### Solution:
-<!--```
+```
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target)
@@ -55,4 +55,3 @@ public:
 
 ```
 
--->
