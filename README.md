@@ -26,21 +26,28 @@ Given two strings *s* and *t*, return true if *t* is an anagram of *s*, and fals
 ```
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target)
-    {
-        unordered_map<int, int> hash_map;
-
-        for (int index = 0; index < nums.size(); index++)
+    bool isAnagram(string s, string t) {
+        unordered_map <char, int> hash_map;
+        if (s.size() != t.size())
         {
-            if (hash_map.count(target - nums[index]))
-            {
-                return {index, hash_map[target - nums[index]]};
-            }
-            hash_map.insert({nums[index], index});
+            return false;
         }
-        return {};
+        for (int index = 0; index < s.size(); index++)
+        {
+            hash_map[(s[index])]++;
+            hash_map[(t[index])]--;
+        }
+
+        for (auto x : hash_map)
+        {
+            if (x.second != 0)
+            {
+                return false;
+            }
+        }
+        return true;
     }
-}
+};
 
 ```
 
