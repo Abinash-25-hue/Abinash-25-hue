@@ -27,29 +27,6 @@ Given an integer array *nums*, return *true* if any value appears at least twice
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        // int s = nums.size();
-        // for (int i = 0; i < s - 1; i++){
-        //     for (int j = i + 1; j < s; j++){
-        //         if (nums[i] == nums[j]){
-        //             return true;
-        //         }
-        //     }    
-        // }
-        // return false;
-        // set<int> s;
-        // for (int i : nums)
-        // {
-        //     if (s.find(i) != s.end())
-        //     {
-        //         return true;
-        //     }
-        //     else
-        //     {
-        //         s.insert(i);
-        //     }
-        // }
-        // return false;
-
         sort(nums.begin(), nums.end());
         for (int i = 0; i < nums.size() - 1; i++)
         {
