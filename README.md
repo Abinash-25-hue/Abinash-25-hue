@@ -13,7 +13,7 @@
 ---
 ## Daily Problem Solving
 <!--My Last LeetCode Problem : -->
-### [Contains Duplicate](https://leetcode.com/problems/valid-anagram)
+### [Contains Duplicate](https://leetcode.com/problems/contains-duplicate)
 - Topics : -
   - Array
   - Hash Table
