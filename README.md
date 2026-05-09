@@ -26,26 +26,39 @@ Given an integer array *nums*, return *true* if any value appears at least twice
 ```
 class Solution {
 public:
-    bool isAnagram(string s, string t) {
-        unordered_map <char, int> hash_map;
-        if (s.size() != t.size())
-        {
-            return false;
-        }
-        for (int index = 0; index < s.size(); index++)
-        {
-            hash_map[(s[index])]++;
-            hash_map[(t[index])]--;
-        }
+    bool containsDuplicate(vector<int>& nums) {
+        // int s = nums.size();
+        // for (int i = 0; i < s - 1; i++){
+        //     for (int j = i + 1; j < s; j++){
+        //         if (nums[i] == nums[j]){
+        //             return true;
+        //         }
+        //     }    
+        // }
+        // return false;
+        // set<int> s;
+        // for (int i : nums)
+        // {
+        //     if (s.find(i) != s.end())
+        //     {
+        //         return true;
+        //     }
+        //     else
+        //     {
+        //         s.insert(i);
+        //     }
+        // }
+        // return false;
 
-        for (auto x : hash_map)
+        sort(nums.begin(), nums.end());
+        for (int i = 0; i < nums.size() - 1; i++)
         {
-            if (x.second != 0)
+            if (nums[i] == nums[i + 1])
             {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 };
 
