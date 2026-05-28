@@ -1,3 +1,6 @@
+<img width="1000" height="300" alt="Learning_never_stops_in_Computer_Science (1)" src="https://github.com/user-attachments/assets/c59028d8-3d2f-4286-9b6a-587aa58d2476" />
+
+
 # Hello World, I am Abinash Nayak.
 
 💻 I'm currently learning **Java** and **Object Oriented Programming**.
