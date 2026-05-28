@@ -1,4 +1,5 @@
-<img width="1000" height="200" alt="Learning_never_stops_in_Computer_Science  (2)" src="https://github.com/user-attachments/assets/b507ad24-6535-4f20-83b1-82ac21e3c06c" />
+<img width="1000" height="199" alt="Learning_never_stops_in_Computer_Science  (2)" src="https://github.com/user-attachments/assets/826f060b-3572-497e-99a7-ad3739af0125" />
+
 
 # Hello World, I am Abinash Nayak.
 
