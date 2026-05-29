@@ -31,16 +31,19 @@ Given an array of strings *strs*, group the **anagrams** together. You can retur
 ```
 class Solution {
 public:
-    bool containsDuplicate(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        for (int i = 0; i < nums.size() - 1; i++)
-        {
-            if (nums[i] == nums[i + 1])
-            {
-                return true;
-            }
+    vector<vector<string>> groupAnagrams(vector<string>& strs) 
+    {
+        unordered_map <string, vector<string>> hash_map;
+        for (const string& index : strs){
+            string temp = index;
+            sort(temp.begin(), temp.end());
+            hash_map[temp].push_back(index);
         }
-        return false;
+        vector <vector<string>> group;
+        for (const auto& x : hash_map){
+            group.push_back(x.second);
+        }
+        return group;
     }
 };
 
