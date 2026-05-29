@@ -21,10 +21,11 @@
 - Topics : -
   - Array
   - Hash Table
+  - String
   - Sorting
 
 #### Description :
-Given an integer array *nums*, return *true* if any value appears at least twice in the array, and return *false* if every element is distinct.
+Given an array of strings *strs*, group the **anagrams** together. You can return the answer in **any order**.
 
 ### Solution:
 ```
