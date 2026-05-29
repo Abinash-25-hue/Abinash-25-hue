@@ -17,7 +17,7 @@
 ## Daily Problem Solving
 <!--My Last LeetCode Problem : -->
 
-### [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) <p align="right"><img src="https://img.shields.io/badge/Easy-green?style=plastic" width="40"></p>
+### [Group Anagrams](https://leetcode.com/problems/group-anagrams) <p align="right"><img src="https://img.shields.io/badge/Easy-green?style=plastic" width="40"></p>
 - Topics : -
   - Array
   - Hash Table
