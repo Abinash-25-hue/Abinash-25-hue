@@ -17,7 +17,7 @@
 ## Daily Problem Solving
 <!--My Last LeetCode Problem : -->
 
-### [Group Anagrams](https://leetcode.com/problems/group-anagrams) <p align="right"><img src="https://img.shields.io/badge/Medium-%23f0bd07?style=plastic" width="60"></p>
+### [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) <p align="right"><img src="https://img.shields.io/badge/Medium-%23f0bd07?style=plastic" width="60"></p>
 - Topics : -
   - Array
   - Hash Table
