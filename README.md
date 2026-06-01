@@ -25,9 +25,11 @@
   - Sorting
   - Heap (Priority Queue)
   - Bucket Sort
+  - Counting
+  - Quick Select
 
 #### Description :
-Given an array of strings *strs*, group the **anagrams** together. You can return the answer in **any order**.
+Given an integer array *nums* and an integer *k*, return **the *k* most frequent elements**. You may return the answer in **any order**.
 
 ### Solution:
 ```
