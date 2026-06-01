@@ -45,25 +45,6 @@ public:
         }
 
         vector <int> solution;
-        /*
-        int max, element;
-        vector <int> solution;
-        while (k > 0)
-        {
-            max = 0;
-            for (auto x : hash_map)
-            {
-                if (x.second > max)
-                {
-                    max = x.second;
-                    element = x.first;
-                }
-            }
-            hash_map[element] = -1;
-            solution.push_back(element);
-            k--;
-        }*/
-
         priority_queue<pair<int, int>> pq;
         for (auto x : hash_map)
         {
