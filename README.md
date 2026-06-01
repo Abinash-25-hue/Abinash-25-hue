@@ -35,19 +35,50 @@ Given an integer array *nums* and an integer *k*, return **the *k* most frequent
 ```
 class Solution {
 public:
-    vector<vector<string>> groupAnagrams(vector<string>& strs) 
+    vector<int> topKFrequent(vector<int>& nums, int k) 
     {
-        unordered_map <string, vector<string>> hash_map;
-        for (const string& index : strs){
-            string temp = index;
-            sort(temp.begin(), temp.end());
-            hash_map[temp].push_back(index);
+        unordered_map<int, int> hash_map;
+
+        for (int x : nums)
+        {
+            hash_map[x]++;
         }
-        vector <vector<string>> group;
-        for (const auto& x : hash_map){
-            group.push_back(x.second);
+
+        vector <int> solution;
+        /*
+        int max, element;
+        vector <int> solution;
+        while (k > 0)
+        {
+            max = 0;
+            for (auto x : hash_map)
+            {
+                if (x.second > max)
+                {
+                    max = x.second;
+                    element = x.first;
+                }
+            }
+            hash_map[element] = -1;
+            solution.push_back(element);
+            k--;
+        }*/
+
+        priority_queue<pair<int, int>> pq;
+        for (auto x : hash_map)
+        {
+            pq.push({x.second, x.first});
         }
-        return group;
+
+        while (k > 0)
+        {
+            pair <int, int> temp = pq.top();
+            solution.push_back(temp.second);
+            pq.pop();
+            k--;
+        }
+        
+        return solution;
     }
 };
 
