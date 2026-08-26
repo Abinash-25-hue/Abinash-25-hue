@@ -14,6 +14,9 @@
 <a href="https://github.com/Abinash-25-hue/CODSOFT"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" width='62'/></a>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="63"/>
           
+---
+<h2 align="center"> 🏆 Completed 500 Contributions in last year ✅</h2>
+
 
 ---
 ## Daily Problem Solving
