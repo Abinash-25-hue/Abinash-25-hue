@@ -44,31 +44,44 @@ Return *the maximum amount of water a container can store.*
 ```
 class Solution {
 public:
-    vector<int> topKFrequent(vector<int>& nums, int k) 
-    {
-        unordered_map<int, int> hash_map;
+    int maxArea(vector<int>& height) {
 
-        for (int x : nums)
+        int water = 0;
+        if (height.size() == 2)
         {
-            hash_map[x]++;
+            if (height[0] < height[1])
+            {
+                water = height[0];
+            }
+            else
+            {
+                water = height[1];
+            }
         }
+        else
+        {
+            int left = 0, right = height.size() - 1, curr = 0;
+            while (left < right)
+            {
+                if (height[left] < height[right])
+                {
+                    curr = height[left] * (right - left);
+                    left++;
+                }
+                else
+                {
+                    curr = height[right] * (right - left);
+                    right--;
+                }
 
-        vector <int> solution;
-        priority_queue<pair<int, int>> pq;
-        for (auto x : hash_map)
-        {
-            pq.push({x.second, x.first});
+                if (curr > water)
+                {
+                    water = curr;
+                }
+            }
+            
         }
-
-        while (k > 0)
-        {
-            pair <int, int> temp = pq.top();
-            solution.push_back(temp.second);
-            pq.pop();
-            k--;
-        }
-        
-        return solution;
+        return water;
     }
 };
 
