@@ -29,7 +29,16 @@
   - Greedy
  
 #### Description :
-Given an integer array *nums* and an integer *k*, return **the *k* most frequent elements**. You may return the answer in **any order**.
+You are given an integer array **height** of length **n**. There are **n** vertical lines drawn such that the two endpoints are of the **i th** line are **{i, 0}** and **{i, height[i]}**.
+
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+
+Return *the maximum amount of water a container can store.*
+
+**Notice** you may not slant the container.
+
+<img width="801" height="383" alt="image" src="https://github.com/user-attachments/assets/c391850e-7e7b-4d9a-becb-a3c97f099d5a" />
+
 
 ### Solution:
 ```
